@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>PROYEK3</title>
+  <title>E-KHASMAYU</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo1.png" rel="icon">
+  <link href="assets/img/logo1.png">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -42,9 +42,13 @@
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <div class="logo">
-        {{-- <h1><a href="index.html"><span>E-khasmayu</E-khasmayu></span></a></h1> --}}
-        <img src="assets/img/logo1.png" class="img-fluid animated" alt="">
+    <div class="logo">
+  <img src="assets/img/logo1.png" class="img-fluid animated" alt="">
+  <span class="logo-text">E-khasmayu</span>
+</div>
+
+        
+        
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -54,18 +58,22 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#produk">Produk</a></li>
           <li><a class="nav-link scrollto" href="#kategori">Kategori</a></li>
-          {{-- <li><a class="dropdown-item" href="#kategori">Kategori</a></li>
-          <li class="dropdown-submenu">
-    <a class="dropdown-item" tabindex="-1" href="#">level 1</a>
-    <ul class="dropdown-menu">
-        <li><a class="dropdown-item" tabindex="-1" href="#">level 2</a></li>
-    </ul>
-</li> --}}
-          {{-- <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li> --}}
+          <!-- <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>  -->
           <li><a class="nav-link scrollto" href="#toko">Toko</a></li>
-
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
            <li><a class="nav-link scrollto" href="#login">Login</a></li>
+
+
+           <!-- <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Login
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+    <li><a class="dropdown-item" href="#">Registrasi</a></li>
+    
+  </ul>
+</li> -->
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -111,12 +119,9 @@
   </section><!-- End Hero -->
 
   <main id="main">
-
-
     <!-- ======= Gallery Section ======= -->
     <section id="produk" class="produk">
       <div class="container">
-
         <div class="section-title" data-aos="fade-up">
           <h2>Produk</h2>
           <p>Check Produk</p>
@@ -133,7 +138,7 @@
                             </h4>
                             <h5 class="card-price small text-warning">
                               <i>
-                                <s>$Rp.10.000</s> $99</i>
+                                <s>Rp.20.000</s> Rp.10.000</i>
                             </h5>
                           </div>
                         </div>
@@ -158,7 +163,24 @@
                             </h4>
                             <h5 class="card-price small text-warning">
                               <i>
-                                <s>$Rp.10.000</s> $99</i>
+                              <s>Rp.20.000</s> Rp.10.000</i>
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-6 col-md-6 col-lg-4 mb-3">
+                        <div class="card h-100 border-0">
+                          <div class="card-img-top">
+                            <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid mx-auto d-block" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center">
+                            <h4 class="card-title">
+                              <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Celana Batik</a>
+                            </h4>
+                            <h5 class="card-price small text-warning">
+                              <i>
+                              <s>Rp.20.000</s> Rp.10.000</i>
                             </h5>
                           </div>
                         </div>
@@ -173,11 +195,11 @@
                           </div>
                           <div class="card-body text-center">
                             <h4 class="card-title">
-                              <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> baju batik</a>
+                              <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Rempeyek</a>
                             </h4>
                             <h5 class="card-price small text-warning">
                               <i>
-                                <s>$Rp.10.000</s> $99</i>
+                              <s>Rp.20.000</s> Rp.10.000</i>
                             </h5>
                           </div>
                         </div>
@@ -192,15 +214,50 @@
                           </div>
                           <div class="card-body text-center">
                             <h4 class="card-title">
-                              <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> baju batik</a>
+                              <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Manisan</a>
                             </h4>
                             <h5 class="card-price small text-warning">
                               <i>
-                                <s>$Rp.10.000</s> $99</i>
+                              <s>Rp.20.000</s> Rp.10.000</i>
                             </h5>
                           </div>
                         </div>
                       </div>
+                      <div class="row">
+                      <div class="col-6 col-md-6 col-lg-4 mb-3">
+                        <div class="card h-100 border-0">
+                          <div class="card-img-top">
+                            <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid mx-auto d-block" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center">
+                            <h4 class="card-title">
+                              <a href="product.html" class=" font-weight-bold text-dark text-uppercase small">Mangga</a>
+                            </h4>
+                            <h5 class="card-price small text-warning">
+                              <i>
+                              <s>Rp.20.000</s> Rp.10.000</i>
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-6 col-md-6 col-lg-4 mb-3">
+                        <div class="card h-100 border-0">
+                          <div class="card-img-top">
+                            <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid mx-auto d-block" alt="Card image cap">
+                          </div>
+                          <div class="card-body text-center">
+                            <h4 class="card-title">
+                              <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Kerajinan</a>
+                            </h4>
+                            <h5 class="card-price small text-warning">
+                              <i>
+                                <s>Rp.20.000</s> Rp.10.000</i>
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    
 
               {{-- </a>
             </div>
@@ -405,7 +462,13 @@
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
               <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-              <h3><a href="">Bumbu & sambal</a></h3>
+              <h3><a href="">Baju</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+              <h3><a href="">Kerajinan</a></h3>
             </div>
           </div>
           {{-- <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
@@ -417,7 +480,7 @@
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
               <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">Baju Batik</a></h3>
+              <h3><a href="baju">Baju Batik</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
@@ -470,7 +533,7 @@
 
 
     <!-- ======= Details Section ======= -->
-    <section id="details" class="details">
+    <section id="baju" class="baju">
       <div class="container">
 
         <div class="row content">
@@ -952,16 +1015,10 @@
           <h2>Login</h2>
           <p>Untuk melanjutkan transaksi</p>
         </div>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="author" content="Kodinger">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>My Login Page</title>
+  
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="{!! asset('register/css/my-login.css') !!}">
-</head>
+<!-- </head> -->
 
 <body class="my-login-page">
 	<section class="h-100">
@@ -974,7 +1031,7 @@
 					<div class="card fat">
 						<div class="card-body">
 							<h4 class="card-title">Login</h4>
-							<form action="/login/login2" class="my-login-validation"  method="post">
+							<form action="/login/regis" class="my-login-validation"  method="post">
                                 @csrf
 								<div class="form-group">
 									<label for="email">E-Mail Address</label>
@@ -1009,7 +1066,8 @@
 									</button>
 								</div>
 								<div class="mt-4 text-center">
-									Don't have an account? <a href="/login/login2/register">Create One</a>
+									Don't have an account? <a href="#register">Create One</a>
+                  
 								</div>
 							</form>
 						</div>
@@ -1027,8 +1085,88 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="{!! asset('register/js/my-login.js') !!}"></script>
 </body>
+<!-- </html> -->
+<!--</login> End login -->
+
+
+  <!-- ======= regis ======= -->
+  <section id="register" class="register">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{!! asset('register/css/my-login.css') !!}">
+<body class="my-login-page">
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					<div class="brand">
+						<img src="{!! asset('/image/logofiks.PNG') !!}" alt="">
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">Register</h4>
+              <!-- <form method="POST" class="my-login-validation" action="/register"> -->
+              <form method="POST" class="my-login-validation" action="#login">
+                                @csrf
+								<div class="form-group">
+									<label for="name">Name</label>
+									<input id="name" type="text" class="form-control" name="name" required autofocus>
+									<div class="invalid-feedback">
+										What's your name?
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="email">E-Mail Address</label>
+									<input id="email" type="email" class="form-control" name="email" required>
+									<div class="invalid-feedback">
+										Your email is invalid
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="password">Password</label>
+									<input id="password" type="password" class="form-control" name="password" required data-eye>
+									<div class="invalid-feedback">
+										Password is required
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="custom-checkbox custom-control">
+										<input type="checkbox" name="agree" id="agree" class="custom-control-input" required="">
+										<label for="agree" class="custom-control-label">I agree to the <a href="#">Terms and Conditions</a></label>
+										<div class="invalid-feedback">
+											You must agree with our Terms and Conditions
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group m-0">
+									<button type="submit" class="btn btn-primary btn-block">
+										Register
+									</button>
+								</div>
+								<div class="mt-4 text-center">
+									Already have an account? <a href="#login">Login</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="footer">
+						Copyright &copy; 2017 &mdash; Your Company
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="{!! asset('register/js/my-login.js') !!}"></script>
+</body>
 </html>
-</login><!-- End login -->
+  <!-- ======= end regis ======= -->
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -1055,13 +1193,6 @@
               </div>
             </div>
           </div>
-
-
-
-
-
-
-
         </div>
       </div>
     </div>
@@ -1095,5 +1226,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
