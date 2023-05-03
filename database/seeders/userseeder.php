@@ -24,8 +24,8 @@ class userseeder extends Seeder
             try {
 
                 $superAdmin = User::create(array_merge([
-                    'name' => 'superAdmin',
-                    'email' => 'superAdmin@gmail.com',
+                    'name' => 'Hj.Sukini',
+                    'email' => 'tokomangga@gmail.com',
                 ], $default_users));
                 DB::commit();
 
