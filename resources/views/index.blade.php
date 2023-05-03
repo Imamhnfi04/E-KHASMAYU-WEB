@@ -147,14 +147,7 @@
                                 </h5>
                             </div>
                         </div>
-                        {{-- </div>
-        <div class="row g-0" data-aos="fade-left">
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
-              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
-                 <h1><a href="">Kerupuk kulit Rp.10.000</a></h1> --}}
                     </div>
                     <div class="row">
                         <div class="col-6 col-md-6 col-lg-4 mb-3">
