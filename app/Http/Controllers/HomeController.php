@@ -26,12 +26,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        //return view('home');
+
+        if(auth()->user()->role == 'penjual') {
+            return view('home'); //ubah ketampilan masing-masing
+        } elseif(auth()->user()->role == 'pembeli') {
+            return view('home');
+        }
     }
 }
-
-// if(auth()->user()->role == 'penjual'){
-//     return view('penjual.home');
-// }elseif(auth()->user()->role == 'pembeli'){
-//     return view('pembeli.home');
-// }

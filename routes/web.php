@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +19,11 @@ Route::get('/', function () {
     return view('index');
 });
 
-// Route::get('/', function () {
-//     return view('admin');
+// Route::get('/registerpenjual', function () {
+//     return view('views/auth/registerpenjual.blade.php');
 // });
+
+Route::resource('/registerpenjual', RegisterController::class);
 
 // Route::get('/', function () {
 //     return view('view/admin/footer');

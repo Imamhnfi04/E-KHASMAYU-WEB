@@ -23,7 +23,7 @@ class userseeder extends Seeder
 
             try {
 
-                $superAdmin = User::create(array_merge([
+                $Penjual = User::create(array_merge([
                     'name' => 'Hj.Sukini',
                     'email' => 'tokomangga@gmail.com',
                 ], $default_users));
