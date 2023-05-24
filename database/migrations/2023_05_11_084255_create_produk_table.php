@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('produk', function (Blueprint $table) {
             $table->id();
+<<<<<<< Updated upstream
             $table->unsignedBigInteger('id_toko');
             $table->unsignedBigInteger('id_kategori');
             $table->unsignedBigInteger('id_produk');
@@ -23,6 +24,18 @@ return new class extends Migration
             $table->string('stok',20);
             $table->string('kategori_produk',50)->nullable();
             
+=======
+            $table->unsignedBigInteger('id_penjual');
+            $table->unsignedBigInteger('id_kategori');
+            $table->string('nama_produk', 100);
+            $table->string('deskripsi_produk',100);
+            $table->integer('harga_produk');
+            $table->char('gambar_produk',100);
+            $table->string('status',20);
+            $table->integer('stok');
+            $table->string('kategori_produk',50)->nullable();
+
+>>>>>>> Stashed changes
             $table->timestamps();
         });
     }

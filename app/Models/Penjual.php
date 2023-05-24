@@ -14,7 +14,6 @@ class Penjual extends Model
         'id_kategori1',
         'id_kategori2',
         'id_kategori3',
-        'nama_penjual',
         'nama_toko',
         'jenis_kelamin',
         'tgl_lahir',
@@ -27,7 +26,7 @@ class Penjual extends Model
         'keterangan',
         'kode_pos',
     ];
-    
+
     public function user(){
         return $this->belongsTo('App\Models\User');
     }

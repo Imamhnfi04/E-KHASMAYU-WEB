@@ -3,7 +3,11 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\RegisterController;
+<<<<<<< Updated upstream
 use App\Http\Controllers\KategoriController;
+=======
+use App\Http\Controllers\RegisterpenjualController;
+>>>>>>> Stashed changes
 
 /*
 |--------------------------------------------------------------------------
@@ -17,14 +21,15 @@ use App\Http\Controllers\KategoriController;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('home.index');
 });
 
 // Route::get('/registerpenjual', function () {
 //     return view('views/auth/registerpenjual.blade.php');
 // });
 
-Route::resource('/registerpenjual', RegisterController::class);
+Route::get('/registerpenjual', [registerpenjualController::class,'index']);
+Route::post('/registerpenjuals', [registerpenjualController::class,'create']);
 
 // Route::get('/', function () {
 //     return view('view/admin/footer');

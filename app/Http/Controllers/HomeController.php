@@ -31,7 +31,7 @@ class HomeController extends Controller
         if(auth()->user()->role == 'penjual') {
             return view('home'); //ubah ketampilan masing-masing
         } elseif(auth()->user()->role == 'pembeli') {
-            return view('home');
+            return view('pembeli.index');
         }
     }
 }

@@ -1,16 +1,17 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Models\Pembeli;
-use App\Providers\RouteServiceProvider;
+use App\Models\Kategori;
+use App\Models\Penjual;
 use App\Models\User;
+use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
-class RegisterController extends Controller
+class registerpenjualController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
@@ -37,6 +38,11 @@ class RegisterController extends Controller
      *
      * @return void
      */
+
+     public function index()
+     {
+        return view ('auth.register.registerpenjual');
+     }
     public function __construct()
     {
         $this->middleware('guest');
@@ -63,24 +69,29 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-    protected function create(array $data)
+    public function create(Request $data)
     {
         $result = User::create([
             'nama' => $data['nama'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'role' => 'pembeli',
+            'role' => 'penjual',
         ]);
         if ($result) {
-            Pembeli::create([
+            Penjual::create([
+                'nama_toko' => $data['nama_toko'],
                 'jenis_kelamin' => $data['jenis_kelamin'],
                 'kode_pos' => $data['kode_pos'],
-                'tandai_lokasi' => $data['tandai_lokasi'],
                 'alamat' => $data['alamat'],
                 'nomor_hp' => $data['nomor_hp'],
+                'keterangan' => $data['keterangan'],
+                'kategori_1' => $data['id_kategori1'],
                 'user_id' => $result->id,
             ]);
-            return $result;
+            // Kategori::create([
+            //     'nama_kategori' => $data['nama_kategori']
+            // ]);
+            return view('auth.login');
         } else {
             $user = User::findOrFail($result->id);
             $user->delete();
