@@ -3,11 +3,11 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\RegisterController;
-<<<<<<< Updated upstream
+
 use App\Http\Controllers\KategoriController;
-=======
+
 use App\Http\Controllers\RegisterpenjualController;
->>>>>>> Stashed changes
+
 
 /*
 |--------------------------------------------------------------------------
@@ -55,4 +55,4 @@ Route::post('/registerpenjuals', [registerpenjualController::class,'create']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::post("/kategori", [KategoriController::class, 'store']); 
+Route::post("/kategori", [KategoriController::class, 'store']);
