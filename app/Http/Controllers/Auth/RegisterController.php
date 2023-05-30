@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
 use App\Models\User;
-use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Models\Pembeli;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
+use App\Providers\RouteServiceProvider;
+use App\Models\Pembeli as ModelsPembeli;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
@@ -50,9 +52,10 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
+            'nama' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'password_confirmation' => ['required', 'same:password'],
         ]);
     }
 
@@ -64,10 +67,24 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
+        $result = User::create([
+            'nama' => $data['nama'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'role' => 'pembeli',
         ]);
+        if ($result){
+            Pembeli::create([
+                'nomor_hp' => $data['nomor_hp'],
+                'alamat' => $data['alamat'],
+                'tandai_lokasi' => $data['tandai_lokasi'],
+                'kode_pos' => $data['kode_pos'],
+                'user_id' => $result->id,
+            ]);
+            return $result;
+        }else{
+            $user = User::findOrFail($result->id);
+            $user->delete();
+        }
     }
 }
