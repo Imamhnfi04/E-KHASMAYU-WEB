@@ -29,6 +29,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   
+  
     
   
 
@@ -66,7 +67,12 @@
           <!-- <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>  -->
           <li><a class="nav-link scrollto" href="#toko">Toko</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          {{-- <li><a class="nav-link scrollto" href="#login">Login</a></li> --}}
           <li><a class="nav-link scrollto" href="#login">Login</a></li>
+          <li><a class="nav-link scrollto" href="#keranjang">Keranjang</a></li>
+          <li><a class="nav-link scrollto" href="#checkout">checkout</a></li>
+
+          {{-- <li><a class="nav-link scrollto" href="#keranjang"></a>Keranjang</li> --}}
 
 
           <!-- <li class="nav-item dropdown">
@@ -152,8 +158,9 @@
                                   </h4>
                                   <div class="text-right" style="color: red">
                                     <i>Rp.10.000</i>
-                                    <a href="" style="float: left;">
-                                      <span class="fas fa-shopping-cart text-primary"></span>
+                                    <a href="#" style="float: left;">
+                                      <span class="fas fa-shopping-cart text-primary"></span><br/>
+                                      <span class="fa fa-heart text-primary"></span>
                                     </a>
                                   </div>
                                   
@@ -336,186 +343,6 @@
                           </div>
                         </section><!-- End Gallery Section -->
                     
-                      {{-- </div>
-        <div class="row g-0" data-aos="fade-left">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
-              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
-                 <h1><a href="">Kerupuk kulit Rp.10.000</a></h1> --}}
-                 {{-- </div>
-                     <div class="row">
-                      <div class="col-3 col-md-3 col-lg-2 mb-3">
-                        <div class="card h-100 border-0">
-                          <div class="card-img-top">
-                            <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid mx-auto d-block" alt="Card image cap">
-                          </div>
-                          <div class="card-body text-center">
-                            <h4 class="card-title">
-                              <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> baju batik</a>
-                            </h4>
-                            <h5 class="card-price small text-warning">
-                              <i>
-                              <s>Rp.20.000</s> Rp.10.000</i>
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-3 col-md-3 col-lg-2 mb-3">
-                        <div class="card h-100 border-0">
-                          <div class="card-img-top">
-                            <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid mx-auto d-block" alt="Card image cap">
-                          </div>
-                          <div class="card-body text-center">
-                            <h4 class="card-title">
-                              <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Celana Batik</a>
-                            </h4>
-                            <h5 class="card-price small text-warning">
-                              <i>
-                              <s>Rp.20.000</s> Rp.10.000</i>
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-
-                       </div>
-                     <div class="row">
-                      <div class="col-3 col-md-3 col-lg-2 mb-3">
-                        <div class="card h-100 border-0">
-                          <div class="card-img-top">
-                            <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid mx-auto d-block" alt="Card image cap">
-                          </div>
-                          <div class="card-body text-center">
-                            <h4 class="card-title">
-                              <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Rempeyek</a>
-                            </h4>
-                            <h5 class="card-price small text-warning">
-                              <i>
-                              <s>Rp.20.000</s> Rp.10.000</i>
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-
-                       </div>
-                     <div class="row">
-                      <div class="col-3 col-md-3 col-lg-2 mb-3">
-                        <div class="card h-100 border-0">
-                          <div class="card-img-top">
-                            <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid mx-auto d-block" alt="Card image cap">
-                          </div>
-                          <div class="card-body text-center">
-                            <h4 class="card-title">
-                              <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Manisan</a>
-                            </h4>
-                            <h5 class="card-price small text-warning">
-                              <i>
-                              <s>Rp.20.000</s> Rp.10.000</i>
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-3 col-md-3 col-lg-2 mb-3">
-                        <div class="card h-100 border-0">
-                          <div class="card-img-top">
-                            <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid mx-auto d-block" alt="Card image cap">
-                          </div>
-                          <div class="card-body text-center">
-                            <h4 class="card-title">
-                              <a href="product.html" class=" font-weight-bold text-dark text-uppercase small">Mangga</a>
-                            </h4>
-                            <h5 class="card-price small text-warning">
-                              <i>
-                              <s>Rp.20.000</s> Rp.10.000</i>
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-3 col-md-3 col-lg-2 mb-3">
-                        <div class="card h-100 border-0">
-                          <div class="card-img-top">
-                            <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid mx-auto d-block" alt="Card image cap">
-                          </div>
-                          <div class="card-body text-center">
-                            <h4 class="card-title">
-                              <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Kerajinan</a>
-                            </h4>
-                            <h5 class="card-price small text-warning">
-                              <i>
-                                <s>Rp.20.000</s> Rp.10.000</i>
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                     --}}
-
-              {{-- </a>
-            </div>
-          </div> --}}
-
-          {{-- <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
-              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
-              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
-              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
-              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
-              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
-              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="450">
-              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div> --}}
     </section><!-- End Gallery Section -->
 
     <!-- ======= Testimonials Section ======= -->
@@ -596,133 +423,8 @@
 
       </div>
     </section><!-- End Testimonials Section -->
-    <!-- ======= About Section ======= -->
-    {{-- <section id="about" class="about">
-      <div class="container-fluid">
 
-        <div class="row">
-          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
-            <a href="https://www.youtube.com/watch?v=StpBR2W8G5A" class="glightbox play-btn mb-4"></a>
-          </div>
-
-          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
-            <h3>Dengan Driver Berpenglaman  </h3>
-            <p></p>
-
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">kemananan Barang</a></h4>
-              <p class="description">driver akan mengantar oleh oleh mu ke rumah</p>
-            </div>
-
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Hadiah</a></h4>
-              <p class="description">Berikan oleh-Oleh khas indramayu ke keluarga dan sahabatmu </p>
-            </div>
-
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-atom"></i></div>
-              <h4 class="title"><a href="">proses</a></h4>
-              <p class="description">Terdapat Info-info toko Oleh-Oleh Khas dari Indramayu</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Section --> --}}
-
-    <!-- ======= Features Section ======= -->
-    <section id="kategori" class="features">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>kategori</h2>
-          <p>Pilih & Temukan</p>
-        </div>
-
-        <div class="row" data-aos="fade-left">
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
-              <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3><a href="">Makanan</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-              <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-              <h3><a href="">Minuman</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
-              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-              <h3><a href="">Baju</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-              <h3><a href="">Kerajinan</a></h3>
-            </div>
-          </div>
-          {{-- <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-              <h3><a href="">Kerajinan</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
-              <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="baju">Baju Batik</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-              <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-              <h3><a href="">Keripik-kripikan</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
-              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-              <h3><a href="">Mangga Indramayu</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
-              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-              <h3><a href="">Manisan</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="450">
-              <i class="ri-anchor-line" style="color: #b2904f;"></i>
-              <h3><a href="">Celana</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="500">
-              <i class="ri-disc-line" style="color: #b20969;"></i>
-              <h3><a href="">Paket Oleh-oleh</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="550">
-              <i class="ri-base-station-line" style="color: #ff5828;"></i>
-              <h3><a href="">Mainan Tradisional</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="600">
-              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-              <h3><a href="">Makanan Kering</a></h3>
-            </div>
-          </div>
-        </div> --}}
-
-      </div>
-    </section><!-- End Features Section -->
+<!-- End Features Section -->
 
 
 
@@ -806,164 +508,7 @@
       </div>
     </section><!-- End Details Section -->
 
-    <!-- ======= Gallery Section ======= -->
-    {{-- <section id="gallery" class="gallery">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Gallery</h2>
-          <p>Check Produk</p>
-        </div>
-
-        <div class="row g-0" data-aos="fade-left">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
-              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
-              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
-              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
-              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
-              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
-              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
-              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="450">
-              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Gallery Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>User00285827Bchteria</h3>
-                <h4>customer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Overall bagus tapi lingkaran tangan yang dipergelangannya besar banget,, pengirimannya cepat banget walaupun dari indramayu.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Pak somat</h3>
-                <h4>customer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Selau puas dangan kualitas produk E-Khasmayu,, Pembelian kesekian kalinya,, recomended bangettt.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>wife yoongi</h3>
-                <h4>customer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  pengirimannya cepat,, kemasan bagus aman,,Harga terbaik,, pelayanan memusakan.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Siti Aisyah</h3>
-                <h4>customer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Alhamdulillah pelayanannya baik sekali pengirimannya cepat... kurirnya komunikatif banget bertanggung jawab ,, seneng banget bisa beli oleh oleh khas indramayu harganya murah Terima kasih top seller dan kurir Terimaksih juga E-Kasmayu.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>user0976kuy</h3>
-                <h4>customer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Alhamdulillah barangnya sampai dengan selmat. Batiknya bagus,, ori, dan terima kasih.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section --> --}}
+   
 
     <!-- ======= Team Section ======= -->
     <section id="toko" class="toko">
@@ -1045,90 +590,7 @@
       </div>
     </section><!-- End Team Section -->
 
-    <!-- ======= Pricing Section ======= -->
-    {{-- <section id="payment" class="pricing">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Payment</h2>
-          <p>Check our Payment</p>
-        </div>
-
-        <div class="row" data-aos="fade-left">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-            <div class="box featured" data-aos="zoom-in" data-aos-delay="200">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="300">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="400">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Pricing Section --> --}}
+    
 
 
 
@@ -1282,6 +744,262 @@
 <!-- </html> -->
 <!--</login> End login -->
 
+
+
+
+
+<!--==========keranjang=======--->
+<section id="keranjang" class="keranjang">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>keranjang</h2>
+      <p>keranjang saya</p>
+    </div>  
+  
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="shoping__cart__table">
+                  <table>
+                      <thead>
+                          <tr>
+                              <th class="shoping__product">Produk</th>
+                              <th>Harga</th>
+                              <th>Jumlah</th>
+                              <th>Total</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td class="shoping__cart__item">
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                  <div class="image-container">
+                                    <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+                                  <h5>Rempeyek</h5>
+                              </td>
+                              <td class="shoping__cart__price">
+                                  $55.00
+                              </td>
+                              <td class="shoping__cart__quantity">
+                                  <div class="quantity">
+                                      <div class="pro-qty">
+                                        <span class="dec qtybtn">-</span>
+                                          <input type="text" value="1">
+                                          <span class="inc qtybtn">+</span>
+                                      </div>
+                                  </div>
+                              </td>
+                              <td class="shoping__cart__total">
+                                  $110.00
+                              </td>
+                              <td class="shoping__cart__item__close">
+                                  <span class="icon_close"></span>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td class="shoping__cart__item">
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                  <div class="image-container">
+                                    <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+                                  <h5>keripik tempe</h5>
+                              </td>
+                              <td class="shoping__cart__price">
+                                  $39.00
+                              </td>
+                              <td class="shoping__cart__quantity">
+                                <div class="quantity">
+                                  <div class="pro-qty">
+                                    <span class="dec qtybtn">-</span>
+                                      <input type="text" value="1">
+                                      <span class="inc qtybtn">+</span>
+                                  </div>
+                              </div>
+                              </td>
+                              <td class="shoping__cart__total">
+                                  $39.99
+                              </td>
+                              <td class="shoping__cart__item__close">
+                                  <span class="icon_close">
+
+                                  </span>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td class="shoping__cart__item">
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                  <div class="image-container">
+                                    <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+                                  <h5>Baju batik</h5>
+                              </td>
+                              <td class="shoping__cart__price">
+                                  $69.00
+                              </td>
+                              <td class="shoping__cart__quantity">
+                                <div class="quantity">
+                                  <div class="pro-qty">
+                                    <span class="dec qtybtn">-</span>
+                                      <input type="text" value="1">
+                                      <span class="inc qtybtn">+</span>
+                                  </div>
+                              </div>
+                              </td>
+                              <td class="shoping__cart__total">
+                                  $69.99
+                              </td>
+                              <td class="shoping__cart__item__close">
+                                  <span class="icon_close"></span>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="shoping__cart__btns">
+                  <a href="#" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
+                  <a href="#" class="primary-btn cart-btn cart-btn-right">
+                    <span class="icon_loading"></span>
+                      Upadate Cart</a>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="shoping__continue">
+                  <div class="shoping__discount">
+                      <h5>Discount Codes</h5>
+                      <form action="#">
+                          <input type="text" placeholder="Enter your coupon code">
+                          <button type="submit" class="site-btn">APPLY COUPON</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="shoping__checkout">
+                  <h5>Cart Total</h5>
+                  <ul>
+                      <li>Subtotal <span>$454.98</span></li>
+                      <li>Total <span>$454.98</span></li>
+                  </ul>
+                  <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a>
+              </div>
+          </div>
+      </div>
+  </div>         
+          </section>
+
+
+          <!--================ checkout =============== -->
+
+          <section id="checkout" class="checkout">
+            <div class="container">
+              <div class="section-title" data-aos="fade-up">
+                <h2>checkout</h2>
+                <p>checkout</p>
+              </div>  
+              <div class="checkout__form">
+                <h4>Detail Pesanan</h4>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Nama depan<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Nama belakang<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="checkout__input">
+                                <p>alamat<span>*</span></p>
+                                <input type="text" placeholder="alamat lengkap" class="checkout__input__add">
+                                <p>Tandai Sebagai</p>
+                                <input type="text" placeholder="Rumah, Kantor, gedung (optinal)">
+                            </div>
+                            <div class="checkout__input">
+                                <p>kabupaten<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input">
+                                <p>provinsi<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input">
+                              <p>Kecamatan<span>*</span></p>
+                              <input type="text">
+                          </div>
+                            <div class="checkout__input">
+                                <p>kode pos<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Nomor hp<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Email<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input__checkbox">
+                                <label for="acc">
+                                    Buat akun baru?
+                                    <input type="checkbox" id="acc">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                           
+                            <div class="checkout__input__checkbox">
+                                {{-- <label for="diff-acc">
+                                    Ship to a different address?
+                                    <input type="checkbox" id="diff-acc">
+                                    <span class="checkmark"></span>
+                                </label> --}}
+                            </div>
+                            <div class="checkout__input">
+                                <p>Catatan pesanan<span>*</span></p>
+                                <input type="text"
+                                    placeholder="Notes about your order, e.g. special notes for delivery.">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="checkout__order">
+                                <h4>Pesanan Anda</h4>
+                                <div class="checkout__order__products">Produk <span>Total</span></div>
+                                <ul>
+                                    <li>Rempeyek <span>$75.99</span></li>
+                                    <li>keripik Tempe <span>$151.99</span></li>
+                                    <li>Baju Batik <span>$53.99</span></li>
+                                </ul>
+                                <div class="checkout__order__subtotal">Subtotal <span>$750.99</span></div>
+                                <div class="checkout__order__total">Total <span>$750.99</span></div>
+                                <div class="checkout__input__checkbox">
+                                <div class="checkout__input__checkbox"> 
+                                <div class="checkout__input__checkbox">
+                                    
+                                </div>
+                                <button type="submit" class="site-btn">checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
   <!-- ======= regis ======= -->
   <section id="register" class="register">

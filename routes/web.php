@@ -19,6 +19,9 @@ use App\Http\Controllers\KategoriController;
 Route::get('/', function () {
     return view('index');
 });
+// Route::get('/', function () {
+//     return view('keranjang');
+// });
 
 // Route::get('/registerpenjual', function () {
 //     return view('views/auth/registerpenjual.blade.php');
