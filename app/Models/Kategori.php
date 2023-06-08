@@ -8,19 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Kategori extends Model
 {
     use HasFactory;
-<<<<<<< Updated upstream
 
-    protected $table = 'kategori';
+    protected $table = 'kategoris';
+    protected $primaryKey = 'id';
 
-    protected $guarded = [''];
-=======
     protected $fillable = [
         'nama_kategori',
-
     ];
 
-    public function kategori(){
+    public function Kategori(){
         return $this->belongsTo('App\Models\Kategori');
     }
->>>>>>> Stashed changes
 }

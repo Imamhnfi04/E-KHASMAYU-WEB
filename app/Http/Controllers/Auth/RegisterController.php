@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
-use App\Models\Pembeli;
-use App\Providers\RouteServiceProvider;
 use App\Models\User;
-use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Models\Pembeli;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
+use App\Providers\RouteServiceProvider;
+use App\Models\Pembeli as ModelsPembeli;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
@@ -54,6 +55,7 @@ class RegisterController extends Controller
             'nama' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'password_confirmation' => ['required', 'same:password'],
         ]);
     }
 
@@ -71,17 +73,16 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'role' => 'pembeli',
         ]);
-        if ($result) {
+        if ($result){
             Pembeli::create([
-                'jenis_kelamin' => $data['jenis_kelamin'],
-                'kode_pos' => $data['kode_pos'],
-                'tandai_lokasi' => $data['tandai_lokasi'],
-                'alamat' => $data['alamat'],
                 'nomor_hp' => $data['nomor_hp'],
+                'alamat' => $data['alamat'],
+                'tandai_lokasi' => $data['tandai_lokasi'],
+                'kode_pos' => $data['kode_pos'],
                 'user_id' => $result->id,
             ]);
             return $result;
-        } else {
+        }else{
             $user = User::findOrFail($result->id);
             $user->delete();
         }

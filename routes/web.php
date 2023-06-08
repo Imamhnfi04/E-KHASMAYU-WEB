@@ -2,12 +2,12 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TokoController;
 use App\Http\Controllers\Auth\RegisterController;
-<<<<<<< Updated upstream
-use App\Http\Controllers\KategoriController;
-=======
-use App\Http\Controllers\RegisterpenjualController;
->>>>>>> Stashed changes
+use App\Http\Controllers\pembeli\KeranjangController;
+use App\Http\Controllers\pembeli\ProfileController;
+use App\Http\Controllers\penjual\RegisterpenjualController;
+use Symfony\Component\HttpKernel\Profiler\Profile;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,38 +21,32 @@ use App\Http\Controllers\RegisterpenjualController;
 */
 
 Route::get('/', function () {
-    return view('home.index');
+    return view('index');
 });
 
-// Route::get('/registerpenjual', function () {
-//     return view('views/auth/registerpenjual.blade.php');
-// });
-
-Route::get('/registerpenjual', [registerpenjualController::class,'index']);
-Route::post('/registerpenjuals', [registerpenjualController::class,'create']);
-
-// Route::get('/', function () {
-//     return view('view/admin/footer');
-// });
-
-// Route::get('/', function () {
-//     return view('view/admin/header');
-// });
-
-// Route::get('/', function () {
-//     return view('view/admin/navbar');
-// });
-
-// Route::get('/', function () {
-//     return view('view/admin/script');
-// });
-
-// Route::get('/', function () {
-//     return view('view/admin/sidebar');
-// });
-
+// Route::resource('/registerpenjual', RegisterController::class);
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::post("/kategori", [KategoriController::class, 'store']); 
+
+Route::get('/registerpenjual', [RegisterpenjualController::class, 'index']);
+
+Route::post('/registerpenjuals', [RegisterpenjualController::class, 'create']);
+
+
+Route::middleware('auth','user-access:pembeli')->group(function(){
+    Route::get('/profile', [ProfileController::class, 'index'])->name('pembeli.profile');
+    Route::put('/profile/update', [ProfileController::class, 'update'])->name('pembeli.profile.update');
+    Route::get('/keranjang', [KeranjangController::class, 'index'])->name('pembeli.keranjang');
+});
+
+Route::get('/toko1', [TokoController::class, 'toko1'])->name('toko1');
+
+Route::get('/basdat', function () {
+    return view('penjual.dashboard');
+});
+
+// Route::get('/', function () {
+//     return view('admin');
+// });
