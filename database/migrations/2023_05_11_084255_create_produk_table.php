@@ -21,7 +21,6 @@ return new class extends Migration
             $table->char('gambar_produk',100);
             $table->string('status',20);
             $table->integer('stok');
-            $table->string('kategori_produk',50)->nullable();
             $table->timestamps();
         });
     }

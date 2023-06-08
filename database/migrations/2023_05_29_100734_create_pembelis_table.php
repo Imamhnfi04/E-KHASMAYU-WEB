@@ -17,11 +17,6 @@ return new class extends Migration
             $table->string('jenis_kelamin', 10)->nullable();
             $table->char('tgl_lahir', 20)->nullable();
             $table->char('nomor_hp',20);
-            $table->string('negara',50)->nullable();
-            $table->string('provinsi',50)->nullable();
-            $table->string('kabupaten',50)->nullable();
-            $table->string('kecamatan',50)->nullable();
-            $table->string('desa',50)->nullable();
             $table->char('alamat',50);
             $table->char('kode_pos',10);
             $table->char('tandai_lokasi',10);

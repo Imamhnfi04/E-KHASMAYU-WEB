@@ -1,92 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>E-KHASMAYU</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <!-- Favicons -->
-    <link href="assets/img/logo1.png" rel="icon">
-    <link href="assets/img/logo1.png">
-
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-
-
-
-
-    <!-- =======================================================
-  * Template Name: Bootslander - v4.10.0
-  * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-        <div class="container d-flex align-items-center justify-content-between">
+    <?php echo $__env->make('layouts.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
-            <div class="logo">
-                <img src="assets/img/logo1.png" class="img-fluid animated" alt="">
-                <span class="logo-text">E-khasmayu</span>
-            </div>
-
-
-
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-        </div>
-
-        <nav id="navbar" class="navbar">
-            <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="#produk">Produk</a></li>
-                <li><a class="nav-link scrollto" href="#kategori">Kategori</a></li>
-                <!-- <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>  -->
-                <li><a class="nav-link scrollto" href="#toko">Toko</a></li>
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                <li><a class="nav-link scrollto" href="#login">Login</a></li>
-
-
-                <!-- <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Login
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="loginDropdown">
-    <li><a class="dropdown-item" href="#">Registrasi</a></li>
-
-  </ul>
-</li> -->
-
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
-
-        </div>
-    </header><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
     <section id="hero">
@@ -135,12 +49,12 @@
                     <p>Check Produk</p>
                 </div>
                 <div class="row gy-4 justify-content-center">
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-l-3 col-lg-3 col-md-4">
                         <div class="card h-100 border-0">
                             <div class="card-img-top">
-                                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="col-lg-10">
                                 <div class="gallery-links d-flex align-items-center justify-content-center">
-                                    <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
+                                    <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
                                         
                                         
                                 </div>
@@ -155,20 +69,19 @@
                                 </h4>
                                 <div class="text-right" style="color: red">
                                     <i>Rp.10.000</i>
-                                    <a href="" style="float: left;">
-                                        <span class="fas fa-shopping-cart text-primary"></span>
-                                    </a>
+                                    <div class="">
+                                        <a href="#"><i class="fas fa-shopping-cart " style="float: left"></i></a>
+                                        <a href="#"><i class="fa fa-heart" style="float: right"></i></a>
+                                    </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-l-3 col-lg-3 col-md-4">
                         <div class="card h-100 border-0">
                             <div class="card-img-top">
-                                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="col-lg-10">
                                 <div class="gallery-links d-flex align-items-center justify-content-center">
                                     <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
                                 </div>
@@ -183,20 +96,20 @@
                                 </h4>
                                 <div class="text-right" style="color: red">
                                     <i>Rp.10.000</i>
-                                    <a href="" style="float: left;">
-                                        <span class="fas fa-shopping-cart text-primary"></span>
-                                    </a>
+                                    <div class="">
+                                        <a href="#"><i class="fas fa-shopping-cart "
+                                                style="float: left"></i></a>
+                                        <a href="#"><i class="fa fa-heart" style="float: right"></i></a>
+                                    </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-l-3 col-lg-3 col-md-4">
                         <div class="card h-100 border-0">
                             <div class="card-img-top">
-                                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="col-lg-10">
                                 <div class="gallery-links d-flex align-items-center justify-content-center">
                                     <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
                                         
@@ -213,144 +126,168 @@
                                 </h4>
                                 <div class="text-right" style="color: red">
                                     <i>Rp.10.000</i>
-                                    <a href="" style="float: left;">
-                                        <span class="fas fa-shopping-cart text-primary"></span>
-                                    </a>
+                                    <div class="">
+                                        <a href="#"><i class="fas fa-shopping-cart "
+                                                style="float: left"></i></a>
+                                        <a href="#"><i class="fa fa-heart" style="float: right"></i></a>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-l-3 col-lg-3 col-md-4">
                         <div class="card h-100 border-0">
                             <div class="card-img-top">
-                                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="col-lg-10">
                                 <div class="gallery-links d-flex align-items-center justify-content-center">
                                     <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
                                         
                                         
                                 </div>
                             </div>
-                            <div class="card-body text-center">
+                            <div class="card-body text-left">
                                 <h4 class="card-title">
                                     <a href="product.html" class=" font-weight-bold text-dark text-uppercase small">
                                         Baju Batik</a>
+                                    <h5 class="small text-left" style="color: grey">
+                                        <i>Batik paoman</i>
+                                    </h5>
                                 </h4>
                                 <div class="text-right" style="color: red">
                                     <i>Rp.10.000</i>
-                                    <a href="" style="float: left;">
-                                        <span class="fas fa-shopping-cart text-primary"></span>
-                                    </a>
+                                    <div class="">
+                                        <a href="#"><i class="fas fa-shopping-cart "
+                                                style="float: left"></i></a>
+                                        <a href="#"><i class="fa fa-heart" style="float: right"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-l-3 col-lg-3 col-md-4">
                         <div class="card h-100 border-0">
                             <div class="card-img-top">
-                                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="col-lg-10">
                                 <div class="gallery-links d-flex align-items-center justify-content-center">
                                     <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
                                         
                                         
                                 </div>
                             </div>
-                            <div class="card-body text-center">
+                            <div class="card-body text-left">
                                 <h4 class="card-title">
                                     <a href="product.html" class=" font-weight-bold text-dark text-uppercase small">
                                         Manisan</a>
+                                    <h5 class="small text-left" style="color: grey">
+                                        <i>Manisan mangga</i>
+                                    </h5>
                                 </h4>
-                                <h5 class="card-price small text-warning">
-                                    <i>
-                                        <s>Rp.20.000</s> Rp.10.000</i>
-                                </h5>
+                                <div class="text-right" style="color: red">
+                                    <i>Rp.10.000</i>
+                                    <div class="">
+                                        <a href="#"><i class="fas fa-shopping-cart "
+                                                style="float: left"></i></a>
+                                        <a href="#"><i class="fa fa-heart" style="float: right"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-l-3 col-lg-3 col-md-4">
                         <div class="card h-100 border-0">
                             <div class="card-img-top">
-                                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="col-lg-10">
                                 <div class="gallery-links d-flex align-items-center justify-content-center">
                                     <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
                                         
                                         
                                 </div>
                             </div>
-                            <div class="card-body text-center">
+                            <div class="card-body text-left">
                                 <h4 class="card-title">
                                     <a href="product.html" class=" font-weight-bold text-dark text-uppercase small">
-                                        Rempeyek</a>
+                                        Keripik Tike</a>
+                                    <h5 class="small text-left" style="color: grey">
+                                        <i>keripik tike khas losarang</i>
+                                    </h5>
                                 </h4>
-                                <h5 class="card-price small text-warning">
-                                    <i>
-                                        <s>Rp.20.000</s> Rp.10.000</i>
-                                </h5>
+                                <div class="text-right" style="color: red">
+                                    <i>Rp.10.000</i>
+                                    <div class="">
+                                        <a href="#"><i class="fas fa-shopping-cart "
+                                                style="float: left"></i></a>
+                                        <a href="#"><i class="fa fa-heart" style="float: right"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-l-3 col-lg-3 col-md-4">
                         <div class="card h-100 border-0">
                             <div class="card-img-top">
-                                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="col-lg-10">
                                 <div class="gallery-links d-flex align-items-center justify-content-center">
                                     <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
                                         
                                         
                                 </div>
                             </div>
-                            <div class="card-body text-center">
+                            <div class="card-body text-left">
                                 <h4 class="card-title">
                                     <a href="product.html" class=" font-weight-bold text-dark text-uppercase small">
                                         Kerajinan</a>
+                                    <h5 class="small text-left" style="color: grey">
+                                        <i>kerajinan</i>
+                                    </h5>
                                 </h4>
-                                <h5 class="card-price small text-warning">
-                                    <i>
-                                        <s>Rp.20.000</s> Rp.10.000</i>
-                                </h5>
+                                <div class="text-right" style="color: red">
+                                    <i>Rp.10.000</i>
+                                    <div class="">
+                                        <a href="#"><i class="fas fa-shopping-cart "
+                                                style="float: left"></i></a>
+                                        <a href="#"><i class="fa fa-heart" style="float: right"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-l-3 col-lg-3 col-md-4">
                         <div class="card h-100 border-0">
                             <div class="card-img-top">
-                                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="col-lg-10">
                                 <div class="gallery-links d-flex align-items-center justify-content-center">
                                     <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
                                         
                                         
                                 </div>
                             </div>
-                            <div class="card-body text-center">
+                            <div class="card-body text-left">
                                 <h4 class="card-title">
                                     <a href="product.html" class=" font-weight-bold text-dark text-uppercase small">
                                         Kerajinan</a>
+                                    <h5 class="small text-left" style="color: grey">
+                                        <i>kerajinan</i>
+                                    </h5>
                                 </h4>
-                                <h5 class="card-price small text-warning">
-                                    <i>
-                                        <s>Rp.20.000</s> Rp.10.000</i>
-                                </h5>
+                                <div class="text-right" style="color: red">
+                                    <i>Rp.10.000</i>
+                                    <div class="">
+                                        <a href="#"><i class="fas fa-shopping-cart "
+                                                style="float: left"></i></a>
+                                        <a href="#"><i class="fa fa-heart" style="float: right"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
         </section><!-- End Gallery Section -->
 
-        
-        
-
-        
-
-        
         </section><!-- End Gallery Section -->
 
-        <!-- ======= Testimonials Section ======= -->
+        <!-- ======= iklan ======= -->
         <section id="testimonials" class="testimonials">
             <div class="container">
 
@@ -359,78 +296,25 @@
 
                         <div class="swiper-slide">
                             <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
-                                    alt="">
-                                <h3>User00285827Bchteria</h3>
-                                <h4>customer</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Overall bagus tapi lingkaran tangan yang dipergelangannya besar banget,,
-                                    pengirimannya cepat banget walaupun dari indramayu.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
+                                <img src="assets/img/iklan-1.jpg" class="col-lg-8">
+                            </div>
+                        </div><!-- iklan -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="assets/img/iklan-2.jpg" class="col-lg-8">
                             </div>
                         </div><!-- End testimonial item -->
 
                         <div class="swiper-slide">
                             <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img"
-                                    alt="">
-                                <h3>Pak somat</h3>
-                                <h4>customer</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Selau puas dangan kualitas produk E-Khasmayu,, Pembelian kesekian kalinya,,
-                                    recomended bangettt.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
+                                <img src="assets/img/iklan-3.jpg" class="col-lg-8">
                             </div>
                         </div><!-- End testimonial item -->
 
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img"
-                                    alt="">
-                                <h3>wife yoongi</h3>
-                                <h4>customer</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    pengirimannya cepat,, kemasan bagus aman,,Harga terbaik,, pelayanan memusakan.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
+                        
 
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img"
-                                    alt="">
-                                <h3>Siti Aisyah</h3>
-                                <h4>customer</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Alhamdulillah pelayanannya baik sekali pengirimannya cepat... kurirnya komunikatif
-                                    banget bertanggung jawab ,, seneng banget bisa beli oleh oleh khas indramayu
-                                    harganya murah Terima kasih top seller dan kurir Terimaksih juga E-Kasmayu.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img"
-                                    alt="">
-                                <h3>user0976kuy</h3>
-                                <h4>customer</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Alhamdulillah barangnya sampai dengan selmat. Batiknya bagus,, ori, dan terima
-                                    kasih.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
+                        
 
                     </div>
                     <div class="swiper-pagination"></div>
@@ -438,47 +322,8 @@
 
             </div>
         </section><!-- End Testimonials Section -->
-        <!-- ======= About Section ======= -->
-        
 
-        <!-- ======= Features Section ======= -->
-        <section id="kategori" class="features">
-            <div class="container">
-
-                <div class="section-title" data-aos="fade-up">
-                    <h2>kategori</h2>
-                    <p>Pilih & Temukan</p>
-                </div>
-
-                <div class="row" data-aos="fade-left">
-                    <div class="col-lg-3 col-md-4">
-                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
-                            <i class="ri-store-line" style="color: #ffbb2c;"></i>
-                            <h3><a href="">Makanan</a></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-                            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-                            <h3><a href="">Minuman</a></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
-                            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-                            <h3><a href="">Baju</a></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-                            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-                            <h3><a href="">Kerajinan</a></h3>
-                        </div>
-                    </div>
-                    
-
-                </div>
-        </section><!-- End Features Section -->
+        <!-- End Features Section -->
 
 
 
@@ -573,47 +418,18 @@
             </div>
         </section><!-- End Details Section -->
 
-        <!-- ======= Gallery Section ======= -->
-        
-
         <!-- ======= Team Section ======= -->
         <section id="toko" class="toko">
             <div class="container">
 
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Toko</h2>
+                    <p>Our Great Toko</p>
+                </div>
 
                 <div class="row" data-aos="fade-left">
-                    <!DOCTYPE html>
-                    <html>
 
-                    <head>
-                        <title>Toko Page</title>
-                        <script>
-                            // Fungsi untuk mengarahkan ke halaman detail informasi toko
-                            function redirectToTokoDetail() {
-                                // Mengganti URL halaman ke halaman detail informasi toko
-                                window.location.href = "toko1.html"; // Ganti "toko1.html" dengan URL halaman detail yang sesuai
-                            }
-                        </script>
-                    </head>
-
-                    <body>
-                        <section id="toko" class="toko">
-                            <div class="container">
-                                <div class="section-title" data-aos="fade-up">
-                                    <h2>Toko</h2>
-                                    <p>Our Great Toko</p>
-                                </div>
-                                <div class="row" data-aos="fade-left">
-
-                                    <!-- Tambahkan modifikasi serupa untuk elemen toko lainnya -->
-                                </div>
-                            </div>
-                        </section>
-                    </body>
-
-                    </html>
-
-                    <div class="col-lg-3 col-md-6" onclick="redirectToTokoDetail()">
+                    <div class="col-lg-3 col-md-6">
                         <div class="member" data-aos="zoom-in" data-aos-delay="100">
                             <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid"
                                     alt=""></div>
@@ -680,11 +496,10 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
-        </section><!-- End Team Section -->
+        </section><!-- End toko Section -->
+
 
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact">
@@ -759,92 +574,99 @@
     </main><!-- End #main -->
 
     <!-- ======= Login ======= -->
-    <section id="login" class="login">
-        <div class="container">
+    <?php if(auth()->guard()->guest()): ?>
+        <section id="login" class="login">
+            <div class="container">
 
-            <div class="section-title" data-aos="fade-up">
-                <h2>Login</h2>
-                <p>Untuk melanjutkan transaksi</p>
-            </div>
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Login</h2>
+                    <p>Untuk melanjutkan transaksi</p>
+                </div>
 
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-                crossorigin="anonymous">
-            <link rel="stylesheet" type="text/css" href="<?php echo asset('register/css/my-login.css'); ?>">
-            <!-- </head> -->
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                    crossorigin="anonymous">
+                <link rel="stylesheet" type="text/css" href="<?php echo asset('register/css/my-login.css'); ?>">
+                <!-- </head> -->
 
-            <body class="my-login-page">
-                <section class="h-100">
-                    <div class="container h-100">
-                        <div class="row justify-content-md-center h-100">
-                            <div class="card-wrapper">
-                                <div class="brand">
-                                    
-                                </div>
-                                <div class="card fat">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Login</h4>
-                                        <form action="<?php echo e(Route('login')); ?>" class="my-login-validation" method="post">
-                                            <?php echo csrf_field(); ?>
-                                            <div class="form-group">
-                                                <label for="email">E-Mail Address</label>
-                                                <input id="email" type="email" class="form-control"
-                                                    name="email" value="" required autofocus>
-                                                <div class="invalid-feedback">
-                                                    Email is invalid
+                <body class="my-login-page">
+                    <section class="h-100">
+                        <div class="container h-100">
+                            <div class="row justify-content-md-center h-100">
+                                <div class="card-wrapper">
+                                    <div class="brand">
+                                        
+                                    </div>
+                                    <div class="card fat">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Login</h4>
+                                            <form action="<?php echo e(Route('login')); ?>" class="my-login-validation"
+                                                method="post">
+                                                <?php echo csrf_field(); ?>
+                                                <div class="form-group">
+                                                    <label for="email">E-Mail Address</label>
+                                                    <input id="email" type="email" class="form-control"
+                                                        name="email" value="" required autofocus>
+                                                    <div class="invalid-feedback">
+                                                        Email is invalid
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="form-group">
-                                                <label for="password">Password
-                                                </label>
-                                                <input id="password" type="password" class="form-control"
-                                                    name="password" required data-eye>
-                                                <div class="invalid-feedback">
-                                                    Password is required
+                                                <div class="form-group">
+                                                    <label for="password">Password
+                                                    </label>
+                                                    <input id="password" type="password" class="form-control"
+                                                        name="password" required data-eye>
+                                                    <div class="invalid-feedback">
+                                                        Password is required
+                                                    </div>
+                                                    <a href="forgot.html" class="float-right">
+                                                        Forgot Password?
+                                                    </a>
                                                 </div>
-                                                <a href="forgot.html" class="float-right">
-                                                    Forgot Password?
-                                                </a>
-                                            </div>
 
-                                            <div class="form-group">
-                                                <div class="custom-checkbox custom-control">
-                                                    <input type="checkbox" name="remember" id="remember"
-                                                        class="custom-control-input">
-                                                    <label for="remember" class="custom-control-label">Remember
-                                                        Me</label>
+                                                <div class="form-group">
+                                                    <div class="custom-checkbox custom-control">
+                                                        <input type="checkbox" name="remember" id="remember"
+                                                            class="custom-control-input">
+                                                        <label for="remember" class="custom-control-label">Remember
+                                                            Me</label>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="form-group m-0">
-                                                <button type="submit" class="btn btn-primary btn-block">
-                                                    Login
-                                                </button>
-                                            </div>
-                                            <div class="mt-4 text-center">
-                                                Don't have an account? <a href="<?php echo e(route('register')); ?>">Create One</a>
-
-                                            </div>
-                                        </form>
+                                                <div class="form-group m-0">
+                                                    <button type="submit" class="btn btn-primary btn-block">
+                                                        Login
+                                                    </button>
+                                                </div>
+                                                <div class="mt-4 text-center">
+                                                    Don't have an account? <a href="<?php echo e(route('register')); ?>">Create
+                                                        One</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        Copyright &copy; 2023 &mdash; e-khasmayu
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-                </script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-                </script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-                </script>
-                <script src="<?php echo asset('register/js/my-login.js'); ?>"></script>
-            </body>
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+                    </script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+                    </script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+                    </script>
+                    <script src="<?php echo asset('register/js/my-login.js'); ?>"></script>
+                </body>
+            <?php endif; ?>
+
             <!-- </html> -->
             <!--</login> End login -->
 
@@ -852,67 +674,5 @@
             <!-- ======= regis ======= -->
             
             <!-- ======= end regis ======= -->
-
-
-            <!-- ======= Footer ======= -->
-            <footer id="footer">
-                <div class="footer-top">
-                    <div class="container">
-                        <div class="row">
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="footer-info">
-                                    <h3>E-Khasmayu</h3>
-                                    <p class="pb-3"><em>hubungi.</em></p>
-                                    <p>
-                                        go mayu <br>
-                                        Indramayu<br><br>
-                                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                                        <strong>Email:</strong> info@proyek3.com<br>
-                                    </p>
-                                    <div class="social-links mt-3">
-                                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="copyright">
-                        <strong><span>PROYEK3</span></strong>.&copy; 2023
-                    </div>
-                    <div class="credits">
-                        <!-- All the links in the footer should remain intact. -->
-                        <!-- You can delete the links only if you purchased the pro version. -->
-                        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/ -->
-                        <a href="https://bootstrapmade.com/"></a>
-                    </div>
-                </div>
-            </footer><!-- End Footer -->
-
-            <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-                    class="bi bi-arrow-up-short"></i></a>
-            <div id="preloader"></div>
-
-            <!-- Vendor JS Files -->
-            <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-            <script src="assets/vendor/aos/aos.js"></script>
-            <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-            <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-            <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-            <script src="assets/vendor/php-email-form/validate.js"></script>
-
-            <!-- Template Main JS File -->
-            <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+            <?php echo $__env->make('layouts.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php /**PATH D:\Semester 4\Proyek 3\E-KHASMAYU-WEB\resources\views/index.blade.php ENDPATH**/ ?>

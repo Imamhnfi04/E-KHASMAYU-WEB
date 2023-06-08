@@ -11,7 +11,7 @@
 
     <!-- Page Wrapper -->
     <div id="wrapper">
-   
+
         <!-- Sidebar -->
         @include('admin.sidebar')
         <!-- End of Sidebar -->
@@ -361,7 +361,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            
+
             @include('admin.footer')
             <!-- End of Footer -->
 

@@ -24,9 +24,9 @@ class HomeController extends Controller
     public function index()
     {
         if(auth()->user()->role == 'pembeli'){
-            return view('pembeli.index');
+            return view('index');
         }elseif(auth()->user()->role == 'penjual'){
-            return view('penjual.index');
+            return view('index');
         }
     }
 }

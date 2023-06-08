@@ -36,6 +36,7 @@ return array(
     'App\\Models\\Kategori' => $baseDir . '/app/Models/Kategori.php',
     'App\\Models\\Pembeli' => $baseDir . '/app/Models/Pembeli.php',
     'App\\Models\\Penjual' => $baseDir . '/app/Models/Penjual.php',
+    'App\\Models\\Produk' => $baseDir . '/app/Models/Produk.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
