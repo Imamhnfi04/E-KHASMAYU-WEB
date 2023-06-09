@@ -9,5 +9,7 @@ class KategoriRepository
     {
         return Kategori::create($data);
     }
+
+
 }
 
