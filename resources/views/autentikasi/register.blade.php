@@ -22,7 +22,7 @@
 							<form method="POST" class="my-login-validation"action="/login/login2/register">
                                 @csrf
 								<div class="form-group">
-									<label for="name">Nama Lengkap</label>
+									<label for="name">Name</label>
 									<input id="name" type="text" class="form-control" name="name" required autofocus>
 									<div class="invalid-feedback">
 										What's your name?

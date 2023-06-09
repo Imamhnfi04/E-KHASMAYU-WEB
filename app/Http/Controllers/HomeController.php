@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Nette\Utils\DateTime;
+use App\Models\Exam;
+use Illuminate\Support\Facades\Crypt;
 
 class HomeController extends Controller
 {
@@ -23,10 +26,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if(auth()->user()->role == 'pembeli'){
-            return view('index');
-        }elseif(auth()->user()->role == 'penjual'){
-            return view('index');
+        //return view('home');
+
+        if(auth()->user()->role == 'penjual') {
+            return view('home'); //ubah ketampilan masing-masing
+        } elseif(auth()->user()->role == 'pembeli') {
+            return view('home');
         }
     }
 }

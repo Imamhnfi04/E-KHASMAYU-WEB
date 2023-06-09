@@ -560,16 +560,11 @@
               // Fungsi untuk mengarahkan ke halaman detail informasi toko
               function redirectToTokoDetail() {
                 // Mengganti URL halaman ke halaman detail informasi toko
-                window.location.href = "toko1.html"; // Ganti "toko1.html" dengan URL halaman detail yang sesuai
+                window.location.href = "#toko1"; // Ganti "toko1.html" dengan URL halaman detail yang sesuai
               }
             </script>
           </head>
           <body>
-            <section id="toko" class="toko">
-              <div class="container">
-                <div class="section-title" data-aos="fade-up">
-                  <h2>Toko</h2>
-                  <p>Our Great Toko</p>
                 </div>
                 <div class="row" data-aos="fade-left">
                   <div class="col-lg-3 col-md-6" onclick="redirectToTokoDetail()">
@@ -595,58 +590,128 @@
           </html>
           
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Toko 2</h4>
-                <span>Oleh-Oleh Baju</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <section id="toko" class="toko">
+            <div class="container">
+              <div class="row" data-aos="fade-left">
+                <!DOCTYPE html>
+                <html>
+                <head>
+                  <title>Toko Page</title>
+                  <script>
+                    // Fungsi untuk mengarahkan ke halaman detail informasi toko
+                    function redirectToTokoDetail() {
+                      // Mengganti URL halaman ke halaman detail informasi toko
+                      window.location.href = "/toko2"; // Ganti "toko1.html" dengan URL halaman detail yang sesuai
+                    }
+                  </script>
+                </head>
+                <body>
+                      </div>
+                      <div class="row" data-aos="fade-left">
+                        <div class="col-lg-3 col-md-6" onclick="redirectToTokoDetail()">
+                          <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                              <h4>Toko 2</h4>
+                              <span>Oleh-Oleh Baju</span>
+                              <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Tambahkan modifikasi serupa untuk elemen toko lainnya -->
+                      </div>
+                    </div>
+                  </section>
+                </body>
+                </html>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="member" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Toko 3</h4>
-                <span>Oleh-oleh Buah-Buahan</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                <section id="toko" class="toko">
+                  <div class="container">
+                    <div class="row" data-aos="fade-left">
+                      <!DOCTYPE html>
+                      <html>
+                      <head>
+                        <title>Toko Page</title>
+                        <script>
+                          // Fungsi untuk mengarahkan ke halaman detail informasi toko
+                          function redirectToTokoDetail() {
+                            // Mengganti URL halaman ke halaman detail informasi toko
+                            window.location.href = "/toko2"; // Ganti "toko1.html" dengan URL halaman detail yang sesuai
+                          }
+                        </script>
+                      </head>
+                      <body>
+                            </div>
+                            <div class="row" data-aos="fade-left">
+                              <div class="col-lg-3 col-md-6" onclick="redirectToTokoDetail()">
+                                <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                  <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+                                  <div class="member-info">
+                                    <h4>Toko 3</h4>
+                                    <span>Oleh-Oleh Buah-buahan</span>
+                                    <div class="social">
+                                      <a href=""><i class="bi bi-twitter"></i></a>
+                                      <a href=""><i class="bi bi-facebook"></i></a>
+                                      <a href=""><i class="bi bi-instagram"></i></a>
+                                      <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Tambahkan modifikasi serupa untuk elemen toko lainnya -->
+                            </div>
+                          </div>
+                        </section>
+                      </body>
+                      </html>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="member" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Toko 4</h4>
-                <span>Oleh-Oleh Kerajinan</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                      <section id="toko" class="toko">
+                        <div class="container">
+                          <div class="row" data-aos="fade-left">
+                            <!DOCTYPE html>
+                            <html>
+                            <head>
+                              <title>Toko Page</title>
+                              <script>
+                                // Fungsi untuk mengarahkan ke halaman detail informasi toko
+                                function redirectToTokoDetail() {
+                                  // Mengganti URL halaman ke halaman detail informasi toko
+                                  window.location.href = "/toko2"; // Ganti "toko1.html" dengan URL halaman detail yang sesuai
+                                }
+                              </script>
+                            </head>
+                            <body>
+                                  </div>
+                                  <div class="row" data-aos="fade-left">
+                                    <div class="col-lg-3 col-md-6" onclick="redirectToTokoDetail()">
+                                      <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                                        <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+                                        <div class="member-info">
+                                          <h4>Toko 4</h4>
+                                          <span>Oleh-Oleh Kerajian</span>
+                                          <div class="social">
+                                            <a href=""><i class="bi bi-twitter"></i></a>
+                                            <a href=""><i class="bi bi-facebook"></i></a>
+                                            <a href=""><i class="bi bi-instagram"></i></a>
+                                            <a href=""><i class="bi bi-linkedin"></i></a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- Tambahkan modifikasi serupa untuk elemen toko lainnya -->
+                                  </div>
+                                </div>
+                              </section>
+                            </body>
+                            </html>
 
-        </div>
 
-      </div>
-    </section><!-- End Team Section -->
+
     <!-- Add an additional container to display the information -->
 
 

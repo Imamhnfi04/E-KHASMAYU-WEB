@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers\Auth;
 
+use alert;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
-use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Request;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -43,14 +45,18 @@ class LoginController extends Controller
     {
         $input = $request->all();
         $this->validate($request, [
-            'email' => ['required', 'email', 'string', 'max:255'],
+            'email' => ['required', 'string','email', 'unique:users'],
             'password' => ['required', 'string', 'min:8'],
         ]);
 
-        if (auth()->attempt(array('email'=>$input['email'], 'password' => $input['password']))){
+        if (auth()->attempt(array('email' => $input['email'], 'password' => $input['password']))) {
+
+            alert()->toast('Welcome '. '<b>'.Auth::user()->email . '</b>' .', you have been successfully logged in!', 'success')->position('top-end');
             return redirect()->route('home');
-        }else{
-            return redirect()->route('login')->withErrors('Email atau Password Salah ');
+
+        } else {
+            return redirect()->route('login')
+                ->withErrors('Email atau Password Salah.');
         }
     }
 }

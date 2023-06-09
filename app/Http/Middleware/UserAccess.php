@@ -18,6 +18,5 @@ class UserAccess
         if (auth()->user()->role == $userType){
             return $next($request);
         }
-        return response()->json(['You do not have permission to access for this page.']);
     }
 }

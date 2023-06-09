@@ -11,13 +11,14 @@
 
     <!-- Page Wrapper -->
     <div id="wrapper">
-
+   
         <!-- Sidebar -->
         @include('admin.sidebar')
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
+
             <!-- Main Content -->
             <div id="content">
 
@@ -360,7 +361,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-
+            
             @include('admin.footer')
             <!-- End of Footer -->
 

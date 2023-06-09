@@ -1,11 +1,16 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
+    
+  <!-- Favicons -->
+  <link href="assets/img/logo1.png" rel="icon">
+  <link href="assets/img/logo1.png">
+
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Proyek <sup>3</sup></div>
+                <div class="sidebar-brand-text mx-3">E-KHASMAYU <sup></sup></div>
             </a>
 
             <!-- Divider -->
@@ -15,10 +20,10 @@
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard Admin</span></a>
+                    <span>Aplikasi marketplace oleh oleh khas Indramayu</span></a>
             </li>
 
-            <!-- Divider -->
+            {{-- <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
@@ -59,7 +64,7 @@
                         <a class="collapse-item" href="utilities-other.html">Other</a>
                     </div>
                 </div>
-            </li>
+            </li> --}}
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -69,12 +74,12 @@
                 Addons
             </div>
 
-            <!-- Nav Item - Pages Collapse Menu -->
+            {{-- <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
+                    <span>Produk</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -88,20 +93,41 @@
                         <a class="collapse-item" href="blank.html">Blank Page</a>
                     </div>
                 </div>
+            </li> --}}
+
+              <!-- Nav Item - Produk -->
+              <li class="nav-item">
+                <a class="nav-link" href="produk.html">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Produk</span></a>
             </li>
 
-            <!-- Nav Item - Charts -->
+            <!-- Nav Item - Kategori -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
+                <a class="nav-link" href="kategori.html">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Kategori</span></a>
             </li>
 
-            <!-- Nav Item - Tables -->
+            <!-- Nav Item - Toko -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="toko.html">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Toko</span></a>
+            </li>
+
+             <!-- Nav Item - Tables -->
+             <li class="nav-item">
+                <a class="nav-link" href="rekappenjualan.html">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
+                    <span>Rekap Penjualan</span></a>
+            </li>
+
+            <!-- Nav Item - Logout -->
+            <li class="nav-item">
+                <a class="nav-link" href="logout.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Logout</span></a>
             </li>
 
             <!-- Divider -->
