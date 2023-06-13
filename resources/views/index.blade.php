@@ -71,6 +71,7 @@
           <li><a class="nav-link scrollto" href="#login">Login</a></li>
           <li><a class="nav-link scrollto" href="#keranjang">Keranjang</a></li>
           <li><a class="nav-link scrollto" href="#checkout">checkout</a></li>
+          <li><a class="nav-link scrollto" href="#detailproduk">detail produk</a></li>
 
           {{-- <li><a class="nav-link scrollto" href="#keranjang"></a>Keranjang</li> --}}
 
@@ -893,11 +894,7 @@
           <!--================ checkout =============== -->
 
           <section id="checkout" class="checkout">
-            <div class="container">
-              <div class="section-title" data-aos="fade-up">
-                <h2>checkout</h2>
-                <p>checkout</p>
-              </div>  
+            <div class="container"> 
               <div class="checkout__form">
                 <h4>Detail Pesanan</h4>
                 <form action="#">
@@ -999,6 +996,134 @@
             </div>
         </div>
     </section>
+
+  <!--================ detail produk =============== -->
+    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+      <div class="container">
+        <section id="detailproduk" class="detailproduk">
+          <div class="container">
+            <div class="section-title" data-aos="fade-up">
+              <h2>detail produk</h2>
+              <p>detail produk</p>
+            </div>  
+          {{-- <div class="row">
+              <div class="col-lg-12 text-center">
+                  <div class="breadcrumb__text">
+                      <h2>Vegetable’s Package</h2>
+                      <div class="breadcrumb__option">
+                          <a href="./index.html">Home</a>
+                          <a href="./index.html">Vegetables</a>
+                          <span>Vegetable’s Package</span>
+                      </div>
+                  </div>
+              </div>
+          </div> --}}
+      </div>
+  </section>
+
+  <!-- Product Details Section Begin -->
+  <section class="product-details spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="product__details__pic">
+                    <div class="product__details__pic__item">
+                        <img class="col-xl-3 col-lg-4 col-md-6"
+                        
+                            src="assets/img/gallery/gallery-4.jpg" alt="">
+                    </div>
+                    <div class="product__details__pic__slider owl-carousel">
+                      <img class="col-xl-3 col-lg-4 col-md-6"
+                      src="assets/img/gallery/gallery-4.jpg" alt="">
+                      <img class="col-xl-3 col-lg-4 col-md-6"
+                      src="assets/img/gallery/gallery-4.jpg" alt="">
+                      <img class="col-xl-3 col-lg-4 col-md-6"
+                      src="assets/img/gallery/gallery-4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="product__details__text">
+                    <h3>Keripik Tike</h3>
+                    <div class="product__details__rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <span>(18 reviews)</span>
+                    </div>
+                    <div class="product__details__price">Rp25.000</div>
+                    <p>Keripik Tike sendiri berasal dari Desa Jumbleng Kecamatan Losarang Kabupaten Indramayu, olahan makanan ringan ini tetap eksis walau proses pembutanya masih tradisional oleh masyarakat setempat.
+                      Kripik Tike memiliki waran tekstur putih dan ada bintik hitam-kehitaman dan mempunyai rasa gurih dan asin..</p>
+                    <div class="product__details__quantity">
+                        <div class="quantity">
+                            <div class="pro-qty">
+                              <span class="dec qtybtn">-</span>
+                              <input type="text" value="1">
+                              <span class="inc qtybtn">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="primary-btn">ADD TO CARD</a>
+                    <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                    <ul>
+                        <li><b>stok</b> <span> <samp>Tersedia</samp></span></li>
+                        <li><b>Asal Makanan</b> <span>Indramayu. </span></li>
+                        <li><b>Nama Penjual</b> <span>Keripik Tike hj ani-losarang. </span></li>
+                        <li><b>Berat Bersih</b> <span>250gr</span></li>
+                        <li><b>Share on</b>
+                            <div class="share">
+                              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="product__details__tab">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
+                                aria-selected="true">Deskripsi produk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
+                                aria-selected="false">Informasi produk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
+                                aria-selected="false">Reviews <span>(1)</span></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                            <div class="product__details__tab__desc">
+                                <h6>Deskripsi produk</h6>
+                                <p>Keripik Tike sendiri berasal dari Desa Jumbleng Kecamatan Losarang Kabupaten Indramayu.</p>
+                                    
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                            <div class="product__details__tab__desc">
+                                <h6>Informasi produk</h6>
+                                <p>olahan makanan ringan ini tetap eksis walau proses pembutanya masih tradisional oleh masyarakat setempat..</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                            <div class="product__details__tab__desc">
+                                <h6>Reviews</h6>
+                                <p>Kripik Tike memiliki waran tekstur putih dan ada bintik hitam-kehitaman dan mempunyai rasa gurih dan asin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
   <!-- ======= regis ======= -->
   <section id="register" class="register">
