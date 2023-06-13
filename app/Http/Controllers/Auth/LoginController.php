@@ -45,13 +45,13 @@ class LoginController extends Controller
     {
         $input = $request->all();
         $this->validate($request, [
-            'email' => ['required', 'string','email'],
+            'email' => ['required', 'string','email', 'unique:users'],
             'password' => ['required', 'string', 'min:8'],
         ]);
 
         if (auth()->attempt(array('email' => $input['email'], 'password' => $input['password']))) {
 
-            // alert()->toast('Welcome '. '<b>'.Auth::user()->email . '</b>' .', you have been successfully logged in!', 'success')->position('top-end');
+            alert()->toast('Welcome '. '<b>'.Auth::user()->email . '</b>' .', you have been successfully logged in!', 'success')->position('top-end');
             return redirect()->route('home');
 
         } else {

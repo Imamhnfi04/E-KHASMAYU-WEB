@@ -11,6 +11,7 @@ class Pembeli extends Model
 
     protected $fillable = [
             'user_id',
+            'nama_pembeli',
             'jenis_kelamin',
             'tgl_lahir',
             'nomor_hp',

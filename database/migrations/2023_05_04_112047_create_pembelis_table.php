@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('pembelis', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            // $table->string('nama_pembeli',100);
+            $table->string('nama_pembeli',100);
             $table->string('jenis_kelamin', 10);
             $table->char('tgl_lahir', 20)->nullable();
             $table->char('nomor_hp',20)->nullable();
