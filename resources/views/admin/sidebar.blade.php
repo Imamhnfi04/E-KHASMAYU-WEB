@@ -97,23 +97,9 @@
 
               <!-- Nav Item - Produk -->
               <li class="nav-item">
-                <a class="nav-link" href="produk.html">
-                    <i class="fas fa-fw fa-folder"></i>
+                <a class="nav-link" href="/product">
+                    <i class="nav-icon fas fa-upload"></i>
                     <span>Produk</span></a>
-            </li>
-
-            <!-- Nav Item - Kategori -->
-            <li class="nav-item">
-                <a class="nav-link" href="kategori.html">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Kategori</span></a>
-            </li>
-
-            <!-- Nav Item - Toko -->
-            <li class="nav-item">
-                <a class="nav-link" href="toko.html">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Toko</span></a>
             </li>
 
              <!-- Nav Item - Tables -->
@@ -126,7 +112,7 @@
             <!-- Nav Item - Logout -->
             <li class="nav-item">
                 <a class="nav-link" href="logout.html">
-                    <i class="fas fa-fw fa-table"></i>
+                    <i class="nav-icon fas fa-power-off"></i>
                     <span>Logout</span></a>
             </li>
 
