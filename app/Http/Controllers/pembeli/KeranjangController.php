@@ -16,7 +16,7 @@ class KeranjangController extends Controller
     {
         $pembeli = Pembeli::where('user_id',auth()->user()->id)->first();
         $this->data['data'] = $pembeli;
-        return view('pembeli.keranjang',$this->data);
+        return view('keranjang.keranjang',$this->data);
     }
 
     /**

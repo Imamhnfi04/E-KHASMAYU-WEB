@@ -33,8 +33,6 @@
 </head>
 
 <body>
-
-
     <header id="header" class="fixed-top d-flex align-items-center header-transparent">
         <div class="container d-flex align-items-center justify-content-between">
 
@@ -46,12 +44,15 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="#produk">Produk</a></li>
-                <li><a class="nav-link scrollto" href="#toko">Toko</a></li>
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                <li><a class="nav-link" href="{{ route('/') }}">Home</a></li>
+                <li class="nav-item "><a
+                        class="nav-link {{ Route::current()->getName()=='pembeli.produk' ? 'active' : '' }}" href="/produks">Produk</a></li>
+                <li class="nav-item "><a
+                        class="nav-link {{ Route::current()->getName()=='pembeli.toko' ? 'active' : '' }}" href="{{ route('pembeli.toko') }}">Toko</a></li>
+                <li class="nav-item "><a
+                        class="nav-link {{ Route::current()->getName()=='pembeli.contact' ? 'active' : '' }}" href="{{ route('pembeli.contact') }}">Contact</a></li>
                 @guest
-                    <li><a class="get-a-quote" href="#login">Login</a></li>
+                    <li><a class="get-a-quote" href="{{ route('login') }}">Login</a></li>
                 @elseif(auth()->user()->role == 'penjual')
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
@@ -62,10 +63,10 @@
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item link-primary" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
+                                Logout
                             </a>
 
-                            <a class="dropdown-item link-primary" href="#">
+                            <a class="dropdown-item link-primary" href="{{ route('penjual.dashboard') }}">
                                 Dashboard
                             </a>
 
@@ -74,8 +75,8 @@
                             </form>
                         </div>
                     @else
-                    <li><a class="nav-link scrollto" href="{{ route('pembeli.keranjang') }}">Keranjang</a></li>
-                    <li><a class="nav-link scrollto" href="#checkout">checkout</a></li>
+                    <li><a class="nav-link {{ Route::current()->getName()=='pembeli.keranjang' ? 'active' : '' }}" href="{{ route('pembeli.keranjang') }}">Keranjang</a></li>
+                    <li><a class="nav-link {{ Route::current()->getName()=='pembeli.checkout' ? 'active' : '' }}" href="{{ route('pembeli.checkout') }}">Checkout</a></li>
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

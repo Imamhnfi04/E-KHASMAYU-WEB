@@ -97,8 +97,7 @@
                                 <div class="text-right" style="color: red">
                                     <i>Rp.10.000</i>
                                     <div class="">
-                                        <a href="#"><i class="fas fa-shopping-cart "
-                                                style="float: left"></i></a>
+                                        <a href="#"><i class="fas fa-shopping-cart " style="float: left"></i></a>
                                         <a href="#"><i class="fa fa-heart" style="float: right"></i></a>
                                     </div>
                                 </div>
@@ -601,12 +600,21 @@
                                         <div class="card-body">
                                             <h4 class="card-title">Login</h4>
                                             <form action="<?php echo e(Route('login')); ?>" class="my-login-validation"
-                                                method="post">
+                                                method="POST">
                                                 <?php echo csrf_field(); ?>
                                                 <div class="form-group">
                                                     <label for="email">E-Mail Address</label>
-                                                    <input id="email" type="email" class="form-control"
-                                                        name="email" value="" required autofocus>
+                                                    <input id="email" type="email"
+                                                        class="form-control <?php $__errorArgs = ['email'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>"
+                                                        name="email" value="<?php echo e(old('email')); ?>" required
+                                                        autocomplete="email" autofocus>
                                                     <div class="invalid-feedback">
                                                         Email is invalid
                                                     </div>
@@ -615,8 +623,16 @@
                                                 <div class="form-group">
                                                     <label for="password">Password
                                                     </label>
-                                                    <input id="password" type="password" class="form-control"
-                                                        name="password" required data-eye>
+                                                    <input id="password" type="password"
+                                                        class="form-control <?php $__errorArgs = ['password'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>"
+                                                        name="password" autocomplete="current-password" required data-eye>
                                                     <div class="invalid-feedback">
                                                         Password is required
                                                     </div>
@@ -638,6 +654,13 @@
                                                     <button type="submit" class="btn btn-primary btn-block">
                                                         Login
                                                     </button>
+
+                                                    <?php if(Route::has('password.request')): ?>
+                                                        <a class="btn btn-link" href="<?php echo e(route('password.request')); ?>">
+                                                            <?php echo e(__('Forgot Your Password?')); ?>
+
+                                                        </a>
+                                                    <?php endif; ?>
                                                 </div>
                                                 <div class="mt-4 text-center">
                                                     Don't have an account? <a href="<?php echo e(route('register')); ?>">Create
@@ -666,8 +689,6 @@
                     <script src="<?php echo asset('register/js/my-login.js'); ?>"></script>
                 </body>
             <?php endif; ?>
-
-            <!-- </html> -->
             <!--</login> End login -->
 
 

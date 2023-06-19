@@ -18,7 +18,7 @@ class ProfileController extends Controller
     public function index(){
         $pembeli = Pembeli::where('user_id',auth()->user()->id)->first();
         $this->data['data'] = $pembeli;
-        return view('pembeli.profile',$this->data);
+        return view('profile.profile',$this->data);
     }
 
     public function update(PembeliRequest $request)
@@ -26,6 +26,7 @@ class ProfileController extends Controller
         $params = $request->all();
 
         $request->validate([
+            // 'nama' => 'nullable|required|string|max:255',
             'current_password' => 'nullable|required_with:new_password',
             'new_password' => 'nullable|min:8|max:12|required_with:current_password',
             'password_confirmation' => 'nullable|min:8|max:12|required_with:new_password|same:new_password'

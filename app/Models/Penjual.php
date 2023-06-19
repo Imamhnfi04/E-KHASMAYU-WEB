@@ -13,7 +13,6 @@ class Penjual extends Model
             'kategori_id',
             'id_kategori2',
             'id_kategori3',
-            'nama_toko',
             'jenis_kelamin',
             'tgl_lahir',
             'nomor_hp',
@@ -23,7 +22,6 @@ class Penjual extends Model
             'kecamatan',
             'desa',
             'alamat',
-            'keterangan',
             'kode_pos',
         ];
 
@@ -32,5 +30,9 @@ class Penjual extends Model
         }
         public function kategoris(){
             return $this->belongsTo('App\Models\Kategori');
+        }
+        public function toko()
+        {
+            return $this->hasOne('App\Models\Toko');
         }
 }

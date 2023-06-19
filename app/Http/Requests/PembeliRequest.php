@@ -25,13 +25,13 @@ class PembeliRequest extends FormRequest
     if ($this->method() == 'PUT') {
         // $tgl_lahir = 'required|unique:pembelis, tgl_lahir'.$id;
         $alamat = 'required|unique:pembelis, alamat'.$id;
-        $nomor_hp = 'required|unique:pembelis, nomor_hp'.$id;
+        // $nomor_hp = 'required|unique:pembelis, nomor_hp'.$id;
         // $keterangan = 'required|unique:pembelis, keterangan'.$id;
         $kode_pos = 'required|unique:pembelis, kode_pos';
         $tandai_lokasi = 'required|unique:pembelis, tandai_lokasi'.$id;
     } else {
         // $tgl_lahir = 'required|unique:pembelis, tgl_lahir, NULL';
-        $nomor_hp = 'required|unique:pembelis, nomor_hp, NULL';
+        // $nomor_hp = 'required|unique:pembelis, nomor_hp, NULL';
         $alamat = 'required|unique:pembelis, alamat';
         // $keterangan = 'required|unique:pembelis, keterangan, NULL';
         $kode_pos = 'required|unique:pembelis, kode_pos, NULL';
@@ -41,10 +41,10 @@ class PembeliRequest extends FormRequest
         'jenis_kelamin' => 'required|string|max:10',
         'tandai_lokasi' => 'required|string|max:10',
         // 'tgl_lahir' => $tgl_lahir,
-        'nomor_hp' => $nomor_hp,
-        'alamat' => $alamat,
+        'nomor_hp' => 'required|string|max:12',
+        'alamat' => 'required|string|max:255',
         // 'keterangan' => $keterangan,
-        'kode_pos' => $kode_pos,
+        'kode_pos' => 'required|string|max:12',
     ];
     }
 }

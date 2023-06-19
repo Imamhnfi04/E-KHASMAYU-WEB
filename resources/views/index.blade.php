@@ -98,8 +98,7 @@
                                 <div class="text-right" style="color: red">
                                     <i>Rp.10.000</i>
                                     <div class="">
-                                        <a href="#"><i class="fas fa-shopping-cart "
-                                                style="float: left"></i></a>
+                                        <a href="#"><i class="fas fa-shopping-cart " style="float: left"></i></a>
                                         <a href="#"><i class="fa fa-heart" style="float: right"></i></a>
                                     </div>
                                 </div>
@@ -630,12 +629,14 @@
                                         <div class="card-body">
                                             <h4 class="card-title">Login</h4>
                                             <form action="{{ Route('login') }}" class="my-login-validation"
-                                                method="post">
+                                                method="POST">
                                                 @csrf
                                                 <div class="form-group">
                                                     <label for="email">E-Mail Address</label>
-                                                    <input id="email" type="email" class="form-control"
-                                                        name="email" value="" required autofocus>
+                                                    <input id="email" type="email"
+                                                        class="form-control @error('email') is-invalid @enderror"
+                                                        name="email" value="{{ old('email') }}" required
+                                                        autocomplete="email" autofocus>
                                                     <div class="invalid-feedback">
                                                         Email is invalid
                                                     </div>
@@ -644,8 +645,9 @@
                                                 <div class="form-group">
                                                     <label for="password">Password
                                                     </label>
-                                                    <input id="password" type="password" class="form-control"
-                                                        name="password" required data-eye>
+                                                    <input id="password" type="password"
+                                                        class="form-control @error('password') is-invalid @enderror"
+                                                        name="password" autocomplete="current-password" required data-eye>
                                                     <div class="invalid-feedback">
                                                         Password is required
                                                     </div>
@@ -667,6 +669,12 @@
                                                     <button type="submit" class="btn btn-primary btn-block">
                                                         Login
                                                     </button>
+
+                                                    @if (Route::has('password.request'))
+                                                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                                                            {{ __('Forgot Your Password?') }}
+                                                        </a>
+                                                    @endif
                                                 </div>
                                                 <div class="mt-4 text-center">
                                                     Don't have an account? <a href="{{ route('register') }}">Create
@@ -695,8 +703,6 @@
                     <script src="{!! asset('register/js/my-login.js') !!}"></script>
                 </body>
             @endguest
-
-            <!-- </html> -->
             <!--</login> End login -->
 
 

@@ -82,7 +82,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="checkout__order">
                             <h4>Pesanan Anda</h4>
-                            <div class="checkout__order__products">Produk <span>Total</span></div>
+                            <div class="checkout__order__product">Produk <span>Total</span></div>
                             <ul>
                                 <li>Rempeyek <span>$75.99</span></li>
                                 <li>keripik Tempe <span>$151.99</span></li>
