@@ -23,33 +23,36 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach ($daftar_keranjang as $data)
                                     <tr>
                                         <td class="shoping__cart__item">
                                             <div class="col-xl-3 col-lg-4 col-md-6">
                                                 <div class="image-container">
-                                                    <img src="assets/img/gallery/gallery-4.jpg"
+                                                    <img src="/image/{{ $data->product->image }}"
                                                         alt="" class="img-fluid">
-                                                    <h5>Rempeyek</h5>
+                                                    <h5>{{$data->product->name}}</h5>
                                         </td>
                                         <td class="shoping__cart__price">
-                                            $55.00
+                                            {{$data->product->harga}}
                                         </td>
                                         <td class="shoping__cart__quantity">
-                                            <div class="quantity">
-                                                <div class="pro-qty">
-                                                    <span class="dec qtybtn">-</span>
-                                                    <input type="text" value="1">
-                                                    <span class="inc qtybtn">+</span>
-                                                </div>
-                                            </div>
+                                            {{$data->jumlah}}
                                         </td>
                                         <td class="shoping__cart__total">
-                                            $110.00
+                                            {{$data->product->harga * $data->jumlah}}
                                         </td>
                                         <td class="shoping__cart__item__close">
                                             <span class="icon_close"></span>
                                         </td>
+                                        <td>
+                                            <form action="{{ route('pembeli.hapuskeranjang', $data->id) }}" method="POST">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </td>
                                     </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
@@ -57,24 +60,20 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="shoping__cart__btns">
-                            <a href="#" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
-                            <a href="#" class="primary-btn cart-btn cart-btn-right">
-                                <span class="icon_loading"></span>
-                                Upadate Cart</a>
-                        </div>
                     </div>
                     <div class="col-lg-4">
-
                     </div>
                     <div class="col-lg-6">
                         <div class="shoping__checkout">
                             <h5>Cart Total</h5>
                             <ul>
-                                <li>Subtotal <span>$454.98</span></li>
-                                <li>Total <span>$454.98</span></li>
+                                <li>Subtotal <span>{{$subtotal}}</span></li>
+                                <li>Total <span>{{$total}}</span></li>
                             </ul>
-                            <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a>
+                            <form action="{{route('pembeli.transaksi')}}" method="POST">
+                                @csrf
+                            <button type="submit" class="primary-btn">PROCEED TO CHECKOUT</button>
+                            </form>
                         </div>
                     </div>
                 </div>

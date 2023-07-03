@@ -1,4 +1,6 @@
-@include('layouts.header')
+{{-- @include('layouts.header') --}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <section id="produk" class="produk">
     <!--================ detail produk =============== -->
@@ -13,17 +15,20 @@
                 </div>
                 <div class="container">
                     <div class="row">
+                        <form method="post" action="{{ route('pembeli.simpankeranjang') }}">
+                            @csrf
+                            <input type="hidden" name="id_produk" value="{{ $data->id }}">
                         <div class="col-lg-6 col-md-6">
                             <div class="product__details__pic">
                                 <div class="product__details__pic__item">
-                                    <img class="col-xl-12 col-lg-12 col-md-12" src="assets/img/gallery/gallery-4.jpg"
+                                    <img class="col-xl-12 col-lg-12 col-md-12" src="/image/{{ $data->image }}"
                                         alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="product__details__text">
-                                <h3>Keripik Tike</h3>
+                                <h3>{{ $data->nama_produk }}</h3>
                                 <div class="product__details__rating">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -32,31 +37,33 @@
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star-half-o"></i>
                                 </div>
-                                <div class="product__details__price">Rp25.000</div>
-                                <p>Keripik Tike sendiri berasal dari Desa Jumbleng Kecamatan Losarang Kabupaten
+                                <div class="product__details__price">{{ $data->harga }}</div>
+                                <p>{{ $data->detail }}</p>
+                                {{-- <p>Keripik Tike sendiri berasal dari Desa Jumbleng Kecamatan Losarang Kabupaten
                                     Indramayu, olahan makanan ringan ini tetap eksis walau proses pembutanya masih
                                     tradisional oleh masyarakat setempat.
                                     Kripik Tike memiliki waran tekstur putih dan ada bintik hitam-kehitaman dan
-                                    mempunyai rasa gurih dan asin..</p>
+                                    mempunyai rasa gurih dan asin..</p> --}}
                                 <div class="product__details__quantity">
                                     <div class="quantity">
                                         <div class="pro-qty">
-                                            <span class="dec qtybtn">-</span>
-                                            <input type="text" value="1">
-                                            <span class="inc qtybtn">+</span>
+                                            <input type="text" name="jumlah" placeholder="Jumlah">
                                         </div>
                                     </div>
                                 </div>
-                                <a href="{{ route('pembeli.keranjang')}}" class="primary-btn">ADD TO CARD</a>
+                                {{-- <a href="{{ route('pembeli.keranjang') }}" class="primary-btn">ADD TO CARD</a> --}}
                                 <ul>
-                                    <li><b>stok</b> <span> <samp>Tersedia</samp></span></li>
-                                    <li><b>Nama Penjual</b> <span>Keripik Tike hj ani-losarang. </span></li>
-                                    <li><b>Berat Bersih</b> <span>250gr</span></li>
+                                    <li><b>stok</b> <span> <samp>{{ $data->stok }}</samp></span></li>
+                                    <li><b>Nama Toko</b> <span>{{ $data->toko->nama_toko }}</span></li>
+                                    <li><b>Berat Bersih</b> <span>{{ $data->berat }}</span></li>
                                 </ul>
+                                <button type="submit" class="btn btn-primary">Masukkan Keranjang</button>
                             </div>
                         </div>
+                    </form>
                     </div>
                 </div>
             </section>
     </section>
-    @include('layouts.footer')
+</section>
+{{-- @include('layouts.footer') --}}

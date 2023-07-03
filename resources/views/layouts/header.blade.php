@@ -76,7 +76,7 @@
                         </div>
                     @else
                     <li><a class="nav-link {{ Route::current()->getName()=='pembeli.keranjang' ? 'active' : '' }}" href="{{ route('pembeli.keranjang') }}">Keranjang</a></li>
-                    <li><a class="nav-link {{ Route::current()->getName()=='pembeli.checkout' ? 'active' : '' }}" href="{{ route('pembeli.checkout') }}">Checkout</a></li>
+                    <li><a class="nav-link {{ Route::current()->getName()=='pembeli.checkout' ? 'active' : '' }}" href="{{ route('pembeli.resi') }}">Checkout</a></li>
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

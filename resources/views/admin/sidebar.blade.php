@@ -95,6 +95,13 @@
                   </div>
               </li> --}}
 
+    <!-- Nav Item - Logout -->
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('/') }}">
+            <i class="nav-icon fas fa-home"></i>
+            <span>Home</span></a>
+    </li>
+
     <!-- Nav Item - Produk -->
     <li class="nav-item">
         <a class="nav-link" href="/product">
@@ -113,13 +120,6 @@
         <a class="nav-link" href="rekappenjualan.html">
             <i class="fas fa-fw fa-table"></i>
             <span>Rekap Penjualan</span></a>
-    </li>
-
-    <!-- Nav Item - Logout -->
-    <li class="nav-item">
-        <a class="nav-link" href="{{ route('/') }}">
-            <i class="nav-icon fas fa-home"></i>
-            <span>Home</span></a>
     </li>
 
     <!-- Divider -->

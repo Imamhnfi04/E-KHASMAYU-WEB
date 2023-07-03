@@ -30,25 +30,32 @@ class RegisterPenjualController extends Controller
             'password' => Hash::make($data['password']),
             'role' => 'penjual',
         ]);
-
+        $param1 = Toko::create([
+            'nama_toko' => $data['nama_toko'],
+        ]) ;
         $param = [
             'nomor_hp' => $data['nomor_hp'],
             'alamat'=> $data['alamat'],
             'kode_pos' => $data['kode_pos'],
             'kategori_id' => $data['kategori_id'],
             'user_id' => $result->id,
+            'toko_id' => $param1->id,
+
         ];
-        if ($result){
-            if (Penjual::create($param)){
-                Toko::create([
-                    'nama_toko' => $data['nama_toko'],
-                    'id_penjual' => $result->penjual->id,
-                ]);
+
+        if ($result && $param1){
+            Penjual::create($param);
+            // if (Penjual::create($param)){
+            //     Toko::create([
+            //         'nama_toko' => $data['nama_toko'],
+            //         'id_penjual' => $result->penjual->id,
+            //     ]);
+                // $input['toko_id'] = $result->toko->id;
                 return redirect()->route('login');
-            }else {
-                $user = User::findOrFail($result->id);
-            $user->delete();
-            }
+            // }else {
+            //     $user = User::findOrFail($result->id);
+            // $user->delete();
+            // }
         }else{
             $user = User::findOrFail($result->id);
             $user->delete();

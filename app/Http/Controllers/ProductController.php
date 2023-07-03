@@ -12,7 +12,7 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $produks = Product::where('id_penjual',"=", Auth::user()->penjual->id)->get();
+        $produks = Product::where('penjual_id',"=", Auth::user()->penjual->id)->get();
         $this->data['produk'] = $produks;
 
         // $product = Produk::latest()->paginate(5);
@@ -59,24 +59,17 @@ class ProductController extends Controller
     {
 
         $request->validate([
-
             'name' => 'required|string',
             'detail' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'harga' => 'required',
             'stok' => 'required',
-            'berat' => 'required'
-
+            'berat' => 'required',
         ]);
-
-
-
         $input = $request->all();
-        // $test = Penjual::with('toko
-        // ')->get();
-        // dd($test);
-        // $input['id_toko'] = auth()->user()->penjual->toko->id;
-        $input['id_penjual'] = auth()->user()->penjual->id;
+        $input['toko_id'] = auth()->user()->penjual->toko->id;
+        $input['penjual_id'] = auth()->user()->penjual->id;
+
 
 
         if ($image = $request->file('image')) {

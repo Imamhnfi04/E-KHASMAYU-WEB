@@ -7,11 +7,11 @@
             <p>Check Produk</p>
         </div>
         <div class="row gy-4 justify-content-center">
-            @forelse ($produks as $produk)
+            @forelse ($data as $produk)
                 <div class="col-l-3 col-lg-3 col-md-4">
-                    <div class="card h-100 border-0" onclick="location.href='{{ route('detailproduk') }}';">
+                    <div class="card h-100 border-0" onclick="location.href='{{ route('produks.show', $produk->id) }}'">
                         <div class="card-img-top">
-                            <img src="assets/img/gallery/gallery-6.jpg" alt="" class="col-lg-10">
+                            <img src="/image/{{ $produk->image }}" alt="" class="col-lg-10">
                             <div class="gallery-links d-flex align-items-center justify-content-center">
                                 <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
                             </div>
@@ -22,13 +22,13 @@
                                     {{ $produk->name}}
                                 </a>
                                 <h5 class="small text-left" style="color: grey">
-                                    {{-- <i>{{ $produk->toko->nama_toko}}</i> --}}
+                                    <i>{{ $produk->toko->nama_toko}}</i>
                                 </h5>
                             </h4>
                             <div class="text-right" style="color: red">
                                 <i>{{$produk->harga}}</i>
                                 <div class="">
-                                    <a href="{{ route('pembeli.keranjang') }}"><i class="fas fa-shopping-cart "
+                                    <a href="{{ route('pembeli.tambahkeranjang', $produk->id) }}"><i class="fas fa-shopping-cart "
                                             style="float: left"></i></a>
                                     <a href="#"><i class="fa fa-heart" style="float: right"></i></a>
                                 </div>
@@ -44,7 +44,7 @@
             {{-- {{ $posts->links() }} --}}
 
 
-            <div class="col-l-3 col-lg-3 col-md-4">
+            {{-- <div class="col-l-3 col-lg-3 col-md-4">
                 <div class="card h-100 border-0" onclick="location.href='{{ route('detailproduk') }}';">
                     <div class="card-img-top">
                         <img src="assets/img/gallery/gallery-2.jpg" alt="" class="col-lg-10">
@@ -71,9 +71,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
-            <div class="col-l-3 col-lg-3 col-md-4">
+            {{-- <div class="col-l-3 col-lg-3 col-md-4">
                 <div class="card h-100 border-0" onclick="location.href='{{ route('detailproduk') }}';">
                     <div class="card-img-top">
                         <img src="assets/img/gallery/gallery-8.jpg" alt="" class="col-lg-10">
@@ -245,7 +245,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
     </div>

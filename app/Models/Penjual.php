@@ -11,6 +11,7 @@ class Penjual extends Model
     protected $fillable = [
             'user_id',
             'kategori_id',
+            'toko_id',
             'id_kategori2',
             'id_kategori3',
             'jenis_kelamin',
@@ -31,8 +32,9 @@ class Penjual extends Model
         public function kategoris(){
             return $this->belongsTo('App\Models\Kategori');
         }
+
         public function toko()
         {
-            return $this->hasOne('App\Models\Toko');
+            return $this->belongsTo('App\Models\Toko');
         }
 }

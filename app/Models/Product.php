@@ -10,8 +10,8 @@ class Product extends Model
     use HasFactory;
 
     protected $fillable = [
-        'id_penjual',
-        //'id_toko',
+        'penjual_id',
+        'toko_id',
         'name',
         'detail',
         'image',
@@ -23,7 +23,8 @@ class Product extends Model
 public function penjual(){
     return $this->belongsTo('App\Models\Penjual');
 }
-// public function toko(){
-//     return $this->belongsTo('App\Models\Toko');
-// }
+public function toko(){
+    return $this->belongsTo('App\Models\Toko');
+}
+
 }

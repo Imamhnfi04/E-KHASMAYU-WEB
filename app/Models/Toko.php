@@ -9,7 +9,6 @@ class Toko extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'id_penjual',
         'nama_toko',
         'jam_buka',
         'banner_toko',
@@ -17,4 +16,12 @@ class Toko extends Model
         'alamat_toko',
         'keterangan',
     ];
+
+    public function penjual(){
+        return $this->hasOne('App\Models\Penjual');
+    }
+
+    public function transaksi(){
+        return $this->hasMany('App\Models\Transaksi', 'id_transaksi', 'id');
+    }
 }

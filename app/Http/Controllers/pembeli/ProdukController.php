@@ -12,13 +12,15 @@ class ProdukController extends Controller
 {
     public function index(){
 
-        $produks = Product::latest()->paginate(8);
-        $toko = Toko::all();
-        $this->data['data'] = $toko;
-        return view('produk.produk', compact('produks'), $this->data);
+
+        $product = Product::all();
+        $data['data'] = $product;
+        return view('produk.produk', $data);
+
     }
 
-    function detail(){
-        return view('produk.detailproduk');
+    function show($id){
+        $data = Product::findOrFail($id);
+        return view('produk.detailproduk', compact('data'));
     }
 }

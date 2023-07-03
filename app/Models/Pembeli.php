@@ -21,4 +21,8 @@ class Pembeli extends Model
     public function user(){
         return $this->belongsTo('App\Models\User');
     }
+
+    public function transaksi(){
+        return $this->hasMany('App\Models\Transaksi', 'id_pembeli', 'id');
+    }
 }
